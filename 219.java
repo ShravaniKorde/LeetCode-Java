@@ -7,8 +7,9 @@ class Solution {
                 hm.put(nums[i], i);
             }
             else{
-                int PastIndex = hm.get(nums[i]);
-                if(Math.abs(PastIndex-i)<=k){
+                int PastIndex = hm.get(nums[i]);    //the value in hashmap where it was previously seen
+                if(Math.abs(PastIndex-i)<=k){        //pastIndex - i means subtracting previously seen value and current for 
+                                                    //loop index where we are now looking at the number
                     return true;
                 }
                 else{
