@@ -1,5 +1,5 @@
-class Solution {
-    public String largestOddNumber(String num) {
+class Solution{
+    public String largestOddNumber(String num){
 
         for(int i = num.length()-1; i>=0; i--){
             char c = num.charAt(i);
